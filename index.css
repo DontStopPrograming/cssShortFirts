@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body-corpo{
+    background-color: #332333;
+    
+}
+
+.item{
+    float: left;
+    margin: 10px 4px;
+    
+}
+
+#container-praecipiens{
+    overflow: hidden;
+}
+
+#loading{
+    font-size: 20px;
+    animation: load 2s linear;
+}
+
+@keyframes load{
+    0%{
+        color: black;
+    }
+    50%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+ 
+}
+
+#praecipiens{
+    border: 10px solid #ffffff;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    animation: move 2s linear;
+    box-shadow: 1px 1px 1px #41e8d5;
+    
+}
+
+ @keyframes move{
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        background-color: #012713;
+    }
+    
+    100%{
+        transform: rotate(360deg);
+        background-color: #f26565;
+    } 
+}
